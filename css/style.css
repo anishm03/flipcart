@@ -1,0 +1,241 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f1f3f6;
+}
+
+/* ================= NAVBAR ================= */
+.navbar {
+  background: #fff;
+  padding: 10px 20px;
+}
+
+.navbar-inner {
+  max-width: 1400px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-box img {
+  height: 30px;
+  object-fit: contain;
+}
+
+.logo-box span {
+  font-size: 12px;
+  color: #555;
+}
+
+.logo-box b {
+  color: #2874f0;
+}
+
+.search-box {
+  flex: 1;
+}
+
+.search-box input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  background: #f0f5ff;
+}
+
+.nav-actions span {
+  margin-left: 20px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+/* ================= CATEGORIES ================= */
+.categories {
+  background: #fff;
+  padding: 15px 0;
+}
+
+.categories-inner {
+  max-width: 1400px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.cat {
+  width: 100px;
+}
+
+.cat img {
+  height: 64px;
+  width: 64px;
+  object-fit: contain;
+}
+
+.cat p {
+  font-size: 14px;
+  margin-top: 6px;
+  font-weight: 500;
+}
+
+/* ================= BANNER ================= */
+.banner {
+  margin: 15px;
+}
+
+.banner-inner {
+  max-width: 1400px;
+  margin: auto;
+  background: linear-gradient(to right, #1e88e5, #3949ab);
+  height: 280px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  color: white;
+}
+
+.banner-left {
+  width: 20%;
+}
+
+.banner-left img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.banner-center {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+}
+
+.banner-center img {
+  max-height: 220px;
+  object-fit: contain;
+}
+
+.banner-right {
+  width: 40%;
+}
+
+.banner-right h1 {
+  font-size: 36px;
+  margin: 10px 0;
+}
+
+.coupon {
+  background: #fff;
+  color: #000;
+  padding: 6px 12px;
+  border-radius: 5px;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 10px;
+}
+/* ================= TOP DEALS ================= */
+.top-deals {
+  background: #fff;
+  margin: 15px;
+  padding: 20px 0;
+}
+
+.top-deals-inner {
+  max-width: 1400px;
+  margin: auto;
+}
+
+.section-title {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.deals-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.deal-card {
+  width: 220px;
+  text-align: center;
+}
+
+.deal-card img {
+  width: 160px;
+  height: 160px;
+  object-fit: contain;
+  margin: auto;
+}
+
+.deal-name {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.deal-price {
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 4px;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .deals-row {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .deal-card {
+    width: 45%;
+  }
+
+  .deal-card img {
+    width: 140px;
+    height: 140px;
+  }
+}
+
+
+/* ================= MOBILE ================= */
+@media (max-width: 768px) {
+
+  .navbar-inner {
+    flex-wrap: wrap;
+  }
+
+  .categories-inner {
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .banner-inner {
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+  }
+
+  .banner-left,
+  .banner-center,
+  .banner-right {
+    width: 100%;
+  }
+
+  .banner-center img {
+    max-height: 180px;
+  }
+}
